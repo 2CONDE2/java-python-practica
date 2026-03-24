@@ -32,6 +32,6 @@ carpetas de ejercisios
 
  1.[1. Java](https://github.com/2CONDE2/java-python-practica/tree/main/Java)
  
- 2.[2. Python]([https://github.com/2CONDE2/java-python-practica/tree/main/Python)
+ 2.[2. Python](https://github.com/2CONDE2/java-python-practica/tree/main/Python)
  
  3.[3. Base de Datos](https://github.com/2CONDE2/java-python-practica/tree/main/sql_server)
