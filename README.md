@@ -8,10 +8,15 @@ Actualmente se está aprendiendo Java a nivel de Programación Orientada a Objet
 Se están practicando conceptos fundamentales como:
 
 -Clases y objetos
+
 -Encapsulamiento
+
 -Herencia
+
 -Polimorfismo
+
 -Uso de métodos y estructuras básicas dentro de la programación -orientada a objetos.
+
 
 y entrando alos conceptos de recursividad
 
