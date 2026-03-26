@@ -16,7 +16,7 @@
     de veh´ıculos que pueden llevar de un lugar X a Y Se de
     sea automatizar el recojo de pasajeros**/
 
-package Java;
+//package Java;
 
 public abstract class TransportePublico {
 
