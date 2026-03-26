@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Trabajos UMSS
 
 Este repositorio contiene algunos trabajos y prácticas realizadas durante el aprendizaje en la universidad.
@@ -63,4 +63,4 @@ carpetas de ejercisios
  2.[2. Python](https://github.com/2CONDE2/java-python-practica/tree/main/Python)
  
  3.[3. Base de Datos](https://github.com/2CONDE2/java-python-practica/tree/main/sql_server)
->>>>>>> f7ac4fca6695a11e42a57bf27ce2b292c2e61654
+
