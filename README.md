@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 Trabajos UMSS
 
 Este repositorio contiene algunos trabajos y prácticas realizadas durante el aprendizaje en la universidad.
