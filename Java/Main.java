@@ -1,16 +1,38 @@
 //package Java;
 public class Main {
+   
 
-    public static void main(String[] args) {
+    //prueba de la busqueda recursiva
+     public static void main(String[] args) {
 
-        Transfer empresa = new Transfer();
+        int[] col = {8, 3, 5, 1, 9, 2};
 
-        Taxi t1 = new Taxi("Rojo100", "Centro", 10, 3);
+        System.out.println("Arreglo original:");
+        mostrar(col);
 
-        empresa.agregarVehiculo(t1);
+        // ordenar el arreglo
+        ordenarArreglos.ordenar(col, col.length, 0);
 
-        t1.recogerPasajeros(2, "Sur");
+        System.out.println("Arreglo ordenado:");
+        mostrar(col);
 
-        System.out.println("Recaudación total: " + empresa.recaudacionTotal());
+        int dato = 5;
+
+        boolean res = Busqueda.busquedaBinaria(col, 0, col.length - 1, dato);
+
+        if (res) {
+            System.out.println("El dato existe en el arreglo");
+        } else {
+            System.out.println("El dato NO existe en el arreglo");
+        }
+    }
+
+    public static void mostrar(int[] col) {
+
+        for (int i = 0; i < col.length; i++) {
+            System.out.print(col[i] + " ");
+        }
+
+        System.out.println();
     }
 }
