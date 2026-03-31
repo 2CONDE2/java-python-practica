@@ -63,10 +63,53 @@ Nivel 3 — JOIN
 
 11️⃣ Mostrar nombre del empleado y nombre de la empresa donde trabaja.
 
+SELECT 
+       e.nombre,
+       emp.nomEmpresa
+FROM Empleados e 
+JOIN Empresas emp
+ON e.codEmpresa = emp.codEmpresa
+
 12️⃣ Mostrar nombre, edad y empresa de cada empleado.
+
+SELECT  
+      e.Nombre,
+      e.Edad,
+      emp.nomEmpresa
+FROM Empleados e
+JOIN Empresas emp
+ON e.codEmpresa = emp.codEmpresa
 
 13️⃣ Mostrar los empleados mayores de 50 años junto con su empresa.
 
-14️⃣ Mostrar empleados que trabajan en TechNova.
+SELECT  
+      e.Nombre,
+      e.Edad,
+      emp.nomEmpresa
+FROM Empleados e
+JOIN Empresas emp
+ON e.codEmpresa = emp.codEmpresa
+WHERE e.Edad > 50
 
-15️⃣ Mostrar nombre del empleado y su empresa ordenados por empresa.
+14️⃣ Mostrar empleados que trabajan en TechNova.
+SELECT  
+      e.Nombre,
+      e.Edad,
+      emp.nomEmpresa
+FROM Empleados e
+JOIN Empresas emp
+ON e.codEmpresa = emp.codEmpresa
+WHERE emp.nomEmpresa = 'TechNova'
+
+
+15️⃣ Mostrar nombre del empleado y su empresa ordenados por empresa
+
+SELECT  
+      e.Nombre,
+      e.Edad,
+      emp.nomEmpresa
+FROM Empleados e
+JOIN Empresas emp
+ON e.codEmpresa = emp.codEmpresa
+ORDER BY emp.nomEmpresa;
+
