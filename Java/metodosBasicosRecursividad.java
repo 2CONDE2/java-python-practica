@@ -11,6 +11,7 @@ public class metodosBasicosRecursividad {
     
     int dig=1245;
         System.out.println(digitos(dig)); 
+        factoresPrimos(dig);
     }
 
     private static int potencia (int b, int p){
@@ -49,4 +50,23 @@ public class metodosBasicosRecursividad {
         res = digitos(n/10)+1;  
      return res;
     }
+
+    private static void factoresPrimos(int n) {
+        factoresPrimos(n, 2);
+    }
+
+    private static void factoresPrimos(int n, int divisor) {
+
+        if (n != 1) { 
+
+            if (n % divisor == 0) {
+                System.out.print(" "+divisor);
+                factoresPrimos(n / divisor, divisor);
+            } else {
+                factoresPrimos(n, divisor + 1);
+            }
+
+        }
+    }
+
 }
