@@ -8,6 +8,9 @@ public class metodosBasicosRecursividad {
         System.out.println(b+": es primo ");
      else
         System.out.println("no es primo");
+    
+    int dig=1245;
+        System.out.println(digitos(dig)); 
     }
 
     private static int potencia (int b, int p){
@@ -36,5 +39,14 @@ public class metodosBasicosRecursividad {
            esPrimo(n, divisor + 1);
 
         return res;
+    }
+
+    private static int digitos(int n){
+     int res ;
+      if(n==0)
+        res = 0;
+      else 
+        res = digitos(n/10)+1;  
+     return res;
     }
 }
