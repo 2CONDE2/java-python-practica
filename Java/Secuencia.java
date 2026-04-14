@@ -25,7 +25,7 @@ public class Secuencia {
               System.err.println();
 
     System.out.println("la suma de los elementos es " + suma(secuencia));       
-
+    System.out.println("EL MENOR ELEMENTO ES "+menorElemento(secuencia, secuencia.size()));
   }    
 
   private static int suma(ArrayList<Integer> lista){
@@ -44,4 +44,23 @@ public class Secuencia {
 
         return suma;
     }
+    private static int menorElemento(ArrayList<Integer> lista, int tam) {
+
+    int res ;
+    if (tam == 1) {
+        res = lista.get(0);
+    }else{
+ 
+    int menorDelResto = menorElemento(lista, tam - 1);
+
+    int ultimo = lista.get(tam - 1);
+
+    if (ultimo < menorDelResto) {
+        res = ultimo;
+    } else {
+        res = menorDelResto;
+    }
+  }
+    return res;
+}
 }
