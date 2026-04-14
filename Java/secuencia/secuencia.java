@@ -45,6 +45,10 @@ public class secuencia {
         int resultadoMulti = aplicar(secuencia, secuencia.size(), multiF);
         System.out.println("Multiplicacion con functor: " + resultadoMulti);
 
+        Functor res = new Resta();
+        int resultadoResta = aplicar(secuencia, secuencia.size() , res);
+        System.out.println("Resta con Functor: "+ resultadoResta );
+  
     }   
 
     private static void mostrar(ArrayList<Integer> lista ){
