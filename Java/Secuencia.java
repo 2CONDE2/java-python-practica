@@ -17,16 +17,25 @@ public class Secuencia {
 
             } 
 
-            for(int i : secuencia){
-                 
-               System.out.print(" "+i);
-            
-              }
+              mostrar(secuencia);
+
               System.err.println();
 
     System.out.println("la suma de los elementos es " + suma(secuencia));       
     System.out.println("EL MENOR ELEMENTO ES "+menorElemento(secuencia, secuencia.size()));
-  }    
+             ordenar(secuencia, 0, secuencia.size());
+             mostrar(secuencia);
+  }   
+  
+  private static void mostrar(ArrayList<Integer> lista ){
+    for(int i : lista){
+                 
+               System.out.print(" "+i);
+            
+              }
+             
+            
+  }
 
   private static int suma(ArrayList<Integer> lista){
        
@@ -63,4 +72,39 @@ public class Secuencia {
   }
     return res;
 }
+  
+     public static void ordenar(ArrayList<Integer> lista, int ini, int n) {
+
+       
+        if (ini >= n - 1) {
+            return;
+        }
+
+        
+        int indiceMin = indiceMenor(lista, ini, n);
+
+       
+        int aux = lista.get(ini);
+        lista.set(ini, lista.get(indiceMin));
+        lista.set(indiceMin, aux);
+
+        ordenar(lista, ini + 1, n);
+    }
+
+    private static int indiceMenor(ArrayList<Integer> lista, int ini, int n) {
+
+        
+        if (ini == n - 1) {
+            return ini;
+        }
+
+        int indiceResto = indiceMenor(lista, ini + 1, n);
+
+        if (lista.get(ini) < lista.get(indiceResto)) {
+            return ini;
+        } else {
+            return indiceResto;
+        }
+    }
+
 }
