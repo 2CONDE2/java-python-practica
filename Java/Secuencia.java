@@ -1,9 +1,10 @@
 import java.util.Random;
 import java.util.ArrayList;
-
+import java.util.Scanner;
 public class Secuencia {
   
   public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
     Random rnd = new Random();
     ArrayList<Integer> secuencia= new ArrayList<>(); 
 
@@ -25,6 +26,16 @@ public class Secuencia {
     System.out.println("EL MENOR ELEMENTO ES "+menorElemento(secuencia, secuencia.size()));
              ordenar(secuencia, 0, secuencia.size());
              mostrar(secuencia);
+             System.out.println( );
+
+    System.out.println ("ingrese un numero ");
+    int num  = sc.nextInt();
+    if(buscar(secuencia,secuencia.size(),num))
+       System.out.println("encontrado");
+    else
+       System.out.println("no enecontrado");  
+
+    
   }   
   
   private static void mostrar(ArrayList<Integer> lista ){
@@ -106,5 +117,18 @@ public class Secuencia {
             return indiceResto;
         }
     }
-
+    private static boolean buscar(ArrayList<Integer> lista , int tam , int dato ){
+    boolean res ;
+           if (tam == 0)
+            res = false;
+          else{
+           if (lista.get(tam-1)==dato)
+            res = true;
+          else 
+            res = buscar(lista, tam-1 , dato ); 
+            
+     
+    } 
+return res ;
+  }
 }
